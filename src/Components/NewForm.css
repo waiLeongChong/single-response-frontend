@@ -1,0 +1,10 @@
+.new-btn {
+  min-width: 100%;
+  min-height: 50px; 
+}
+
+.form-border {
+  border: 2px solid #fcba03; 
+  padding: 20px;
+  border-radius: 8px;
+}

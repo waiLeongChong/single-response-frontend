@@ -5,9 +5,59 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #212529 !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+.text-main {
+  color: #fcba03 !important;
+}
+
+.text-main-hover {
+  color: #fcba03 !important;
+}
+.text-main-hover:hover {
+  color: #ffff !important;
+}
+
+
+.bg-main-color {
+  background-color: #fcba03 !important;
+}
+
+.btn-outline-main-color {
+  border: 1px solid #fcba03 !important;
+  background-color: #212529 !important;
+}
+.btn-outline-main-color:hover {
+  border: 1px solid #fcba03 !important;
+  background-color: #fcba03 !important;
+  color: #212529 !important;
+}
+
+.btn-bg-main {
+  background-color: #fcba03 !important;
+  border-color: #fcba03!important;
+  color: #212529 !important;
+}
+
+.btn-bg-main:hover,
+.btn-bg-main:focus,
+.btn-bg-main:active {
+  background-color: #e5a103 !important; 
+  border-color: #e5a103 !important;
+  color: #ffff !important;
+}
+
+
+
+.card-body-bg {
+  background-color: #212529 !important;
+}
+

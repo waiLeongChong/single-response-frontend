@@ -1,0 +1,25 @@
+.movie-edit-image {
+  max-width: 100%;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+Form {
+  padding-left: 80px;
+  padding-right: 80px;
+  border-radius: 8px;
+}
+
+Form.Label {
+  font-weight: 500;
+}
+
+Button {
+  margin-top: 20px;
+}
+
+.edit-btn {
+  min-width: 50%;
+  min-height: 50px; 
+}
+

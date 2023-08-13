@@ -1,0 +1,52 @@
+.card-img-hover {
+  position: relative;
+  overflow: hidden; /*This will ensure nothing goes outside the card boundary*/
+}
+
+.card-img-hover img {
+  transition: all 0.4s ease-out;
+}
+
+.card-img-hover:hover img {
+  transform: scale(1.06) translateY(0.3%);
+}
+
+.card-img-hover .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0); /* Initial transparent background */
+  transition: background 0.4s ease-out;
+}
+
+.card-img-hover:hover .img-overlay {
+  background: rgba(0, 0, 0, 0.5); /* 50% black background on hover */
+}
+
+.card-img-hover .detail-btn {
+  position: absolute;
+  top: 60%; /* Start a bit lower */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+
+.card-img-hover:hover .detail-btn {
+  border: 1px solid #fcba03 !important;
+  background-color: #212529 !important;
+  color: #ffff !important;
+  top: 50%; /* Move to center on hover */
+  opacity: 1;
+}
+
+
+.card-img-hover .detail-btn:hover {
+  background-color: #fcba03 !important; 
+  color: #ffff !important;
+}
+
+
+

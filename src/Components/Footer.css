@@ -1,0 +1,22 @@
+footer a {
+  color: #fcba03;
+  margin-left: 10px;
+}
+
+footer a:hover {
+  color: #ffff;
+}
+
+h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+i.bi {
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+i.bi:hover {
+  color: #ffff;  
+}
