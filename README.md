@@ -1,3 +1,3 @@
-# single-response-frontend
+# Single Response Frontend
 
-The front-end application uses CSS framework Bootstrap.
+This project was bootstrapped with Create React App.
