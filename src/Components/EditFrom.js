@@ -8,7 +8,7 @@ import "./EditFrom.css"
 const API = process.env.REACT_APP_API_URL;
 
 function Edit() {
-  const { index } = useParams();
+  const { id } = useParams();
   const navigate = useNavigate();
 
   const [movie, setMovie] = useState({
@@ -21,7 +21,7 @@ function Edit() {
 
   useEffect(() => {
     axios
-      .get(`${API}/movies/${index}`)
+      .get(`${API}/movies/${id}`)
       .then((response) => {
         const data = response.data;
         if (data.release_date) {
@@ -32,7 +32,7 @@ function Edit() {
       .catch((error) => {
         console.error(error);
       });
-  }, [index]);
+  }, [id]);
   
 
   const handleInput = (event) => {
@@ -45,9 +45,9 @@ function Edit() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .put(`${API}/movies/${index}`, movie)
+      .put(`${API}/movies/${id}`, movie)
       .then(() => {
-        navigate(`/movies/${index}`);
+        navigate(`/movies/${id}`);
       })
       .catch((error) => {
         console.error(error);
