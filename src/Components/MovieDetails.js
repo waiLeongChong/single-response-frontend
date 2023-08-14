@@ -7,25 +7,25 @@ import './MovieDetails.css';
 const API = process.env.REACT_APP_API_URL;
 
 function MovieDetails() {
-  let { index } = useParams();
+  let { id } = useParams();
   const navigate = useNavigate();
   const [movie, setMovie] = useState({});
 
   useEffect(() => {
     axios
-      .get(`${API}/movies/${index}`)
+      .get(`${API}/movies/${id}`)
       .then((response) => {
         setMovie(response.data);
       })
       .catch(() => {
         navigate("/not-found");
       });
-  }, [index, navigate]);
+  }, [id, navigate]);
 
 
   const deleteMovie = () => {
     axios
-      .delete(`${API}/movies/${index}`)
+      .delete(`${API}/movies/${id}`)
       .then(() => {
         navigate("/movies");
       })
@@ -51,13 +51,13 @@ function MovieDetails() {
                 </Card.Text>
                 <Card.Text>
                   <span className="fw-bold text-main">
-                    <i className="bi bi-calendar3"></i>
+                    <i className="bi bi-calendar3 fs-6"></i>
                   </span> {movie.release_date}
                 </Card.Text>
                 <Card.Text>
                   <span className="fw-bold text-main">
-                    <i className="bi bi-film"></i>
-                  </span> ${movie.box_office}M
+                    <i className="bi bi-film fs-6"></i>
+                  </span> {movie.box_office}
                 </Card.Text>
               </div>
               <Card.Body> 
@@ -85,7 +85,7 @@ function MovieDetails() {
               </Card.Body>
               
               <Button className="btn-bg-main details-btn" onClick={() => navigate("/movies")}>Back</Button>
-              <Button className="btn-bg-main mx-2 details-btn" onClick={() => navigate(`/movies/${index}/edit`)}>Edit</Button>
+              <Button className="btn-bg-main mx-2 details-btn" onClick={() => navigate(`/movies/${id}/edit`)}>Edit</Button>
               <Button className="btn-bg-main details-btn" onClick={deleteMovie}>Delete</Button>
             </Card.Body>
           </Card>

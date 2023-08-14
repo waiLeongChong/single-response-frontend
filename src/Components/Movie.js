@@ -16,7 +16,7 @@ function Movie({ movie, index }) {
 
   return (
     <Card className="mb-5 border-0">
-      <Link to={`/movies/${index}`} className="card-img-hover">
+      <Link to={`/movies/${movie.id}`} className="card-img-hover">
         <Card.Img variant="top" src={movie.image_url} alt={movie.title} />
         <div className="img-overlay">
           <button className="btn btn-primary detail-btn">Details</button>
@@ -40,7 +40,7 @@ function Movie({ movie, index }) {
           <Card.Text>
             <span className="fw-bold text-main">
               <i className="bi bi-film fs-6"></i>
-            </span> ${movie.box_office}M
+            </span> {movie.box_office}
           </Card.Text>
           <Card.Text>
             <span className="fw-bold text-main">

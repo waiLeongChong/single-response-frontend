@@ -21,7 +21,7 @@ function Movies() {
       <Row>
         {movies.map((movie, index) => {
           return (
-            <Col sm={6} md={4} lg={3} key={index}>
+            <Col sm={6} md={4} lg={3} key={movie.id}>
               <Movie movie={movie} index={index} />
             </Col>
           );
