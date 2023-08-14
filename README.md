@@ -1,4 +1,4 @@
-# Single Resource Frontend
+# Single Resource Project
 
 The Pikaflx web application showcases a collection of movies from a database, This project is jointly developed by Silis Kleemoff and Wai Leong Chong.
 
