@@ -27,7 +27,7 @@ function Footer() {
 
           <Col md={3}>
             <h5>Wai Leong Chong</h5>
-            <a href="https://github.com/waiLeongChong?tab=repositories" target="_blank" rel="noopener noreferrer" className="me-2">
+            <a href="https://github.com/waiLeongChong" target="_blank" rel="noopener noreferrer" className="me-2">
               <i className="bi bi-github"></i>
             </a>
             <a href="https://www.linkedin.com/in/wai-leong-chong/" target="_blank" rel="noopener noreferrer" className="me-2">

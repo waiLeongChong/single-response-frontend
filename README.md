@@ -1,6 +1,6 @@
 # Single Resource Project
 
-The Pikaflx web application showcases a collection of movies from a database, This project is jointly developed by Silis Kleemoff and Wai Leong Chong.
+The Pikaflx web application showcases a collection of movies from a database, This project is jointly developed by [Silis Kleemoff](https://github.com/KleemoffDeveloper) and [Wai Leong Chong](https://github.com/waiLeongChong).
 
 ## Features
 - Display Movie List.
