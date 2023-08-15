@@ -12,7 +12,7 @@ The Backend API endpoint was created by Silis Kleemoff.
 
 ## Technologies Used
 
-### [Frontend-url](https://main--pikaflx.netlify.app/) 
+### [Frontend-url](https://pikaflx.netlify.app/) 
 - React.js: JavaScript library for building user interfaces.
 - Bootstrap: Styling and building responsive designs.
 - Axios: HTTP client for making API requests.
